@@ -64,6 +64,12 @@ TogglesPanel::TogglesPanel(SettingsWindow *parent) : ListWidget(parent) {
       "When enabled, pressing the accelerator pedal will disengage openpilot.",
       "../assets/offroad/icon_disengage_on_accelerator.svg",
     },
+    {
+      "Quiet_Steer_Alert",
+      "Quiet Steering Disable Alerts on Override",
+      "Disabled the noise for the Steering Disabled Alerts if you are overriding the wheel!",
+      "../assets/offroad/icon_calibration.png",
+    },
 #ifdef ENABLE_MAPS
     {
       "NavSettingTime24h",
