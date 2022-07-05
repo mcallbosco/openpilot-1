@@ -1,3 +1,5 @@
+THIS FORK IS ONLY FOR THE HONDA CLARITY!!!!! Do not use with other NIDEC hondas.
+
 ![](https://i.imgur.com/b0ZyIx5.jpg)
 
 Table of Contents
