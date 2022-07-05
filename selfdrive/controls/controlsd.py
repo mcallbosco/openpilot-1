@@ -225,8 +225,9 @@ class Controls:
       return
 
     # Disable on rising edge of accelerator or brake. Also disable on brake when speed > 0
+    # Changed behavior to prevent cruise fault on Honda Clarity
     if (CS.gasPressed and not self.CS_prev.gasPressed and self.disengage_on_accelerator) or \
-      (CS.brakePressed and (not self.CS_prev.brakePressed or not CS.standstill)):
+      (CS.brakePressed):
       if CS.cruiseState.enabled:
         self.events.add(EventName.pedalPressed)
       elif not self.enable_mads or self.mads_dlob or (self.mads_ndlob and CS.standstill):
